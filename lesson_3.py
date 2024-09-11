@@ -34,5 +34,5 @@ Content-Type: text/plain; charset="UTF-8";
 На курсы, которые еще не вышли, можно подписаться и получить уведомление о релизе сразу на \
 имейл.""".format(website=website, friend_name=friend_name, my_name=my_name,email_from=email_from, email_to=email_to)
 letter = letter.encode("UTF-8")
-server.sendmail('guminskayair@yandex.ru', 'jeefox@yandex.ru', letter)
+server.sendmail(email_from, email_to, letter)
 server.quit()
